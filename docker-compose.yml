@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  go-env:
+    image: golang:1.21.4
+    volumes:
+        - ./src:/work
+    working_dir: /work
+    tty: true
